@@ -1,6 +1,11 @@
 name: 🚀 Run
 
 on:
+  pull_request:
+    types: [opened]
+  push:
+    tags:
+      - '*'
   workflow_dispatch:
 
 jobs:
